@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Learn HTML | Lesson 1</title>
+<style>
+body {background: gray;}
+#topic1 {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+}
+.nexttopic {
+  color: blue;
+}
+.nexttopic:hover {
+  color: purple;
+}
+.endlesson {
+  color: blue;
+}
+.endlesson:hover {
+  color: purple;
+}
+.otherTopics {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+  display: none;
+}
+#lessonend {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+  display: none;
+}
+</style>
+<script>
+function nexttopic1(){
+  document.getElementById("topic1").style.display = "none";
+  document.getElementById("topic2").style.display = "block";
+} 
+function nexttopic2(){
+  document.getElementById("topic2").style.display = "none";
+  document.getElementById("topic3").style.display = "block"; 
+}
+function nexttopic3(){
+  document.getElementById("topic3").style.display = "none";
+  document.getElementById("topic4").style.display = "block";
+} 
+function nexttopic4(){
+  document.getElementById("topic4").style.display = "none";
+  document.getElementById("topic5").style.display = "block";
+} 
+function nexttopic5(){
+  document.getElementById("topic5").style.display = "none";
+  document.getElementById("topic6").style.display = "block";
+} 
+function nexttopic6(){
+  document.getElementById("topic6").style.display = "none";
+  document.getElementById("topic7").style.display = "block";
+}
+function nexttopic7(){
+  document.getElementById("topic7").style.display = "none";
+  document.getElementById("topic8").style.display = "block";
+}
+function nexttopic8(){
+  document.getElementById("topic8").style.display = "none";
+  document.getElementById("topic9").style.display = "block";
+}
+function nexttopic9(){
+  document.getElementById("topic9").style.display = "none";
+  document.getElementById("topic10").style.display = "block";
+}
+function endlesson(){
+  document.getElementById("topic10").style.display = "none";
+  document.getElementById("lessonend").style.display = "block";
+}
+</script>
+</head>
+<body>
+<div id="topic1">
+<h2>What is HTML?</h2>
+<br>
+<p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+<br>
+<h2>What is HTML used for?</h2>
+<br>
+<p>HTML is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
+<br><br><br><br>
+<p class="nexttopic" onclick="nexttopic1()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic2" class="otherTopics">
+<h2>Elements vs. Tags</h2>
+<br>
+<h3>Elements</h3>
+<p>An HTML element is a component of an HTML document that tells a web browser how to structure and interpret a part of the HTML document. HTML elements can contain formatting instructions, semantic meaning, and content.</p>
+<h3>Tags</h3>
+<p>An HTML tag is a piece of markup language used to indicate the beginning and end of an HTML element in an HTML document. As part of an HTML element, HTML tags help web browsers convert HTML documents into web pages.  Tags comprise elements.</p>
+<br><br><br><br><br>
+<p class="nexttopic" onclick="nexttopic2()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic3" class="otherTopics">
+<h2>HTML Attributes</h2>
+<br>
+<h3>Definition</h3>
+<p>HTML attributes are special words used inside the opening tag to control the element's behavior. HTML attributes are a modifier of an HTML element type.</p>
+<h3>Attribute Types</h3>
+HTML attributes are generally classified as required attributes, optional attributes, standard attributes, and event attributes:
+<ul style="text-align: left;">
+<li>Usually the required and optional attributes modify specific HTML elements</li>
+<li>While the standard attributes can be applied to most HTML elements.</li>
+<li>Event attributes, added in HTML version 4, allow an element to specify scripts to be run under specific circumstances.</li></ul>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic3()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic4" class="otherTopics">
+<h2>Element Syntax</h2>
+<p style="border-top: solid lightblue 4px; background: lightgray;">&lt;p&gt;Content&lt;/p&gt;</p>
+<p>Above we can see the p element which indicates a paragraph to the browser. The start tag &lt;p&gt; indicates the beginning of the paragraph and the ending tag &lt;/p&gt; defines the end of the paragraph. As you can see tags names are surrounded by &lt;&gt;, angle brackets. The content, "Content", in the center is the body of the paragraph. This tells the browser to add space before and after the content.
+<br><br>
+There are a few exceptions where elements may just have an opening tag only.
+<br><br>
+Inside the starting tag &lt;p&gt; we can place attributes, such as class="intro" (in full, &lt;p class="intro"&gt;).
+</p>
+<h3>Diagram</h3>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32la_qKv1e5p99xpRnf4I5DvV8KmuPlg1y8E8PKLbEoyvvQlnOQbjfLNSHCDfxoPSjA:https://codetheweb.blog/assets/img/posts/html-syntax/tag-structure-2.png&usqp=CAU"><br><small>Image from codingame.com</small>
+<br><br><br><br><br>
+<p class="nexttopic" onclick="nexttopic4()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic5" class="otherTopics">
+<h2>&lt;!DOCTYPE html&gt;</h2>
+<br>
+<p>The HTML document type declaration, also known as DOCTYPE , is the first line of code required in every HTML or XHTML document. The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. This ensures that the web page is parsed the same way by different web browsers.  To declare the current version, HTML 5, use &lt;!DOCTYPE html&gt;.<br><br>Simplified, the DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in.</p>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic5()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic6" class="otherTopics">
+<h2>HTML Element</h2>
+<br>
+<p>The &lt;html&gt; tag represents the root of an HTML document.
+The &lt;html&gt; tag is the container for all other HTML elements (except for the &lt;!DOCTYPE&gt; tag).</p>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic6()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic7" class="otherTopics">
+<h2>Head Element</h2>
+<br>
+<p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. HTML metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic7()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic8" class="otherTopics">
+<h2>Title Element</h2>
+<br>
+<p>The &lt;title&gt; element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored.  This element should be placed in the head.</p>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic8()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic9"class="otherTopics" >
+<h2>HTML Headings</h2>
+<br>
+<p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</p><h3>Headings are important!</h3><p>Search engines use the headings to index the structure and content of your web pages.
+
+Users often skim a page by its headings. It is important to use headings to show the document structure.
+
+&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</p><h3>Example:</h3><h1>&lt;h1&gt;</h1><h2>&lt;h2&gt;</h2><h3>&lt;h3&gt;</h3><h4>&lt;h4&gt;</h4><h5>&lt;h5&gt;</h5><h6>&lt;h6&gt;</h6>
+<br><br><br>
+<p class="nexttopic" onclick="nexttopic9()"><u>Next Topic &#129170;</u></p>
+</div>
+<div id="topic10" class="otherTopics">
+<h2>Paragraph</h2>
+<br>
+<p>The HTML &lt;p&gt; element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+<br><br><br>
+<p class="endlesson" onclick="endlesson()"><u>Finish &#129170;</u></p>
+</div>
+<div id="lessonend">
+<h2>End of lesson.</h2>
+</div>
+</body>
+</html>
