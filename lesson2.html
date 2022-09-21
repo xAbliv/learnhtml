@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Learn HTML | Lesson 2</title>
+	<style>
+	body {
+		background: gray;
+	}
+	
+	#topic1 {
+		background: white;
+		color: black;
+		border-radius: 10px;
+		text-align: center;
+		margin: 15px;
+		padding: 5px;
+	}
+	
+	.nexttopic {
+		color: blue;
+	}
+	
+	.nexttopic:hover {
+		color: purple;
+	}
+	
+	.endlesson {
+		color: blue;
+	}
+	
+	.endlesson:hover {
+		color: purple;
+	}
+	
+	.otherTopics {
+		background: white;
+		color: black;
+		border-radius: 10px;
+		text-align: center;
+		margin: 15px;
+		padding: 5px;
+		display: none;
+	}
+	
+	#lessonend {
+		background: white;
+		color: black;
+		border-radius: 10px;
+		text-align: center;
+		margin: 15px;
+		padding: 5px;
+		display: none;
+	}
+	
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+	
+	td,
+	th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	</style>
+	<script>
+	function nexttopic1() {
+		document.getElementById("topic1").style.display = "none";
+		document.getElementById("topic2").style.display = "block";
+	}
+
+	function nexttopic2() {
+		document.getElementById("topic2").style.display = "none";
+		document.getElementById("topic3").style.display = "block";
+	}
+
+	function nexttopic3() {
+		document.getElementById("topic3").style.display = "none";
+		document.getElementById("topic4").style.display = "block";
+	}
+
+	function nexttopic4() {
+		document.getElementById("topic4").style.display = "none";
+		document.getElementById("topic5").style.display = "block";
+	}
+
+	function nexttopic5() {
+		document.getElementById("topic5").style.display = "none";
+		document.getElementById("topic6").style.display = "block";
+	}
+
+	function nexttopic6() {
+		document.getElementById("topic6").style.display = "none";
+		document.getElementById("topic7").style.display = "block";
+	}
+
+	function nexttopic7() {
+		document.getElementById("topic7").style.display = "none";
+		document.getElementById("topic8").style.display = "block";
+	}
+
+	function nexttopic8() {
+		document.getElementById("topic8").style.display = "none";
+		document.getElementById("topic9").style.display = "block";
+	}
+
+	function nexttopic9() {
+		document.getElementById("topic9").style.display = "none";
+		document.getElementById("topic10").style.display = "block";
+	}
+
+	function endlesson() {
+		document.getElementById("topic10").style.display = "none";
+		document.getElementById("lessonend").style.display = "block";
+	}
+	</script>
+</head>
+
+<body>
+	<div id="topic1">
+		<h2>Basic Text Formatting</h2>
+		<p style="border-top: solid lightblue 4px; background: lightgray;"><b>This text is bold </b><i> This text is italic </i><sub> Subscript </sub><sup> Superscript</sup></p>
+		<br>
+		<p>HTML contains several elements for defining text with a special meaning such as <b>bold</b>,<i> italic</i>,<sub> subscript</sub> and <sup> superscript</sup>.</p>
+		<br>
+		<h2>Formatting</h2>
+		<br>
+		<table>
+			<tr>
+				<th>Element</th>
+				<th>Opening and closing tags</th>
+				<th>Definition</th>
+			</tr>
+			<tr>
+				<td>Bold</td>
+				<td>&lt;b&gt;&lt;/b&gt;</td>
+				<td>Defines bold text.</td>
+			</tr>
+			<tr>
+				<td>Italic</td>
+				<td>&lt;i&gt;&lt;/i&gt;</td>
+				<td>Defines italic text.</td>
+			</tr>
+			<tr>
+				<td>Superscript</td>
+				<td>&lt;sup&gt;&lt;/sup&gt;</td>
+				<td>Defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.</td>
+			</tr>
+			<tr>
+				<td>Subscript</td>
+				<td>&lt;sub&gt;&lt;/sub&gt;</td>
+				<td>Defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.</td>
+			</tr>
+			<tr>
+				<td>Strong</td>
+				<td>&lt;strong&gt;&lt;/strong&gt;</td>
+				<td>Defines text with strong importance. The content inside is typically displayed in bold.</td>
+			</tr>
+			<tr>
+				<td>Emphasized</td>
+				<td>&lt;em&gt;&lt;/em&gt;</td>
+				<td>Defines emphasized text. Usually displayed in bold.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic1()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic2" class="otherTopics">
+		<h2>HTML Comments</h2>
+		<br>
+		<h3>You can add comments to your HTML documents using the following syntax:</h3>
+		<p><pre><xmp><!-- comment --></xmp></pre></p>
+		<br>
+		<p>Note: Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic2()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic3" class="otherTopics">
+		<h2>HTML Hyperlinks</h2>
+		<br>
+		<p>Links are found in nearly all web pages. Links allow users to click their way from page to page. HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+		<h3>Link Syntax</h3>
+		<p>
+			<xmp><a href="url">link text</a></xmp>
+		</p>
+		<p>The most important attribute of the &gt;a&lt; element is the href attribute, which indicates the link's destination. The link text is the part that will be visible to the reader. Clicking on the link text, will send the reader to the specified URL address.</p>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic3()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic4" class="otherTopics">
+		<h2>HTML Images</h2>
+		<p style="border-top: solid lightblue 4px; background: lightgray;">&lt;img src="url" alt="alternate text"&gt;</p>
+		<p> The HTML &tt;img&gt; tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image. The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag. The &lt;img&gt; tag has two required attributes:</p>
+		<ul style="text-align: left;">
+			<li>src - Specifies the path to the image</li>
+			<li>alt - Specifies an alternate text for the image</li>
+		</ul>
+		<br>
+		<p>Note: the &lt;img&gt; tag is a <abbr title="Some HTML tags (like img and br) don't have their own content. These are known as self closing tags or empty tags.  They do not require a closing tag.">Self Closing Tag</abbr>.</p>
+		<h3>The src Attribute</h3>
+		<p>The required <span style="color: red;">src</span> attribute specifies the path (URL) to the image.
+			<br>
+			<br>Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.</p>
+		<br>
+		<h3>The alt Attribute</h3>
+		<p>The required <span style="color:red;">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). The value of the <span style="color:red;">alt</span> attribute should describe the image. If a browser cannot find an image, it will display the value of the <span style="color:red;">alt</span> attribute.</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic4()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic5" class="otherTopics">
+		<h2>HTML Videos</h2>
+		<br>
+		<p>To show a video in HTML, use the &lt;video&gt; element.
+			<br>
+			<br><span style="background: lightgray;">&lt;video width="320" height="240" controls&gt;<br>
+  &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+  &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+Your browser does not support the video tag.<br>
+&lt;/video&gt;</span></p>
+		<br>
+		<h3>Explanation</h3>
+		<p>The controls attribute adds video controls, like play, pause, and volume.
+			<br>
+			<br>It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+			<br>
+			<br>The &lt;source&gt; element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+			<br>
+			<br>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</p>
+		<br>
+		<h3>Autoplay Attribute</h3>
+		<p>To start a video automatically, use the autoplay attribute. You can also add the muted attribute after autoplay to let your video start playing automatically (but muted).</p>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic5()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic6" class="otherTopics">
+		<h2>HTML Audio</h2>
+		<br>
+		<p>To play an audio file in HTML, use the &lt;audio&gt; element.
+			<br>
+			<br><span style="background: lightgray;">&lt;audio controls&gt;<br>
+  &lt;source src="horse.ogg" type="audio/ogg"&gt;<br>
+  &lt;source src="horse.mp3" type="audio/mpeg""&gt;<br>
+Your browser does not support the video tag.<br>
+&lt;/video&gt;</span></p>
+		<br>
+		<h3>Explanation</h3>
+		<p>The controls attribute adds audio controls, like play, pause, and volume.
+			<br>
+			<br>The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+			<br>
+			<br>The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</p>
+		<br>
+		<h3>Autoplay Attribute</h3>
+		<p>To start an audio file automatically, use the autoplay attribute. You can add muted after autoplay to let your audio file start playing automatically (but muted).</p>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic6()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic7" class="otherTopics">
+		<h2>HTML meta tag</h2>
+		<br>
+		<p>The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the &lt;meta&gt; tag. In another lesson, we will go over the &lt;meta&gt; tag in more depth, and, we will review what attributes can go into it.
+			<br>
+			<br>
+			<br>
+			<p class="nexttopic" onclick="nexttopic7()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic8" class="otherTopics">
+		<h2>HTML iframe</h2>
+		<br>
+		<h4>Syntax:</h4>
+		<xmp>
+<iframe src="url" title="description"></iframe>
+		</xmp>
+		<br>
+		<p>An HTML iframe is used to display a web page within a web page.
+			<br>
+			<br>The HTML &lt;iframe&gt; tag specifies an inline frame.
+			<br>
+			<br>An inline frame is used to embed another document within the current HTML document.
+			<br>
+			<br>It is a good practice to always include a title attribute for the &lt;iframe&gt;. This is used by screen readers to read out what the content of the iframe is.</p>
+		<h3>iframe Height and Width</h3>
+		<p>Use the height and width attributes to specify the size of the iframe. The height and width are specified in pixels by default.
+			<br>
+			<br>Or, you can add the style attribute and use the CSS height and width properties.</p>
+		<br>
+		<br>
+		<br>
+		<p class="nexttopic" onclick="nexttopic8()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic9" class="otherTopics">
+		<h2>HTML YouTube Videos</h2>
+		<br>
+		<p>The easiest way to play videos in HTML, is to use YouTube.
+			<br>
+			<br>Struggling with Video Formats?
+			<br>
+			<br>Converting videos to different formats can be difficult and time-consuming.
+			<br>
+			<br>An easier solution is to let YouTube play the videos in your web page. YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video.
+			<br>
+			<br>You can use this id, and refer to your video in the HTML code.
+			<br>
+			<br> To play your video on a web page, do the following:
+			<ul style="text-align: left;">
+				<li>Upload the video to YouTube</li>
+				<li>Take a note of the video id</li>
+				<li>Define an &lt;iframe&gt; element in your web page</li>
+				<li>Let the src attribute point to the video URL</li>
+				<li>Use the width and height attributes to specify the dimension of the player</li>
+				<li>Add any other parameters to the URL</li>
+			</ul>
+			<h4>Example</h4> <pre>&lt;iframe width="420" height="315"
+src="https://www.youtube.com/embed/videoID"&gt;
+&lt;/iframe&lt;</pre>
+			<br>
+			<br>
+			<br>
+			<p class="nexttopic" onclick="nexttopic9()"><u>Next Topic &#129170;</u></p>
+	</div>
+	<div id="topic10" class="otherTopics">
+		<h2>HTML Style Tag</h2>
+		<br>
+		<p>The HTML &lt;style&gt; tag defines internal CSS in your HTML document. Internal CSS is used to define a style for a single HTML page. Tnternal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+		<br>
+		<br>
+		<br>
+		<p class="endlesson" onclick="endlesson()"><u>Finish &#129170;</u></p>
+	</div>
+	<div id="lessonend">
+		<h2>End of lesson.</h2> </div>
+</body>
+
+</html>
